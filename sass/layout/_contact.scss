@@ -1,0 +1,102 @@
+/////// CONTACT HEADING ///////
+
+.contact-text {
+    text-align: center;
+    
+
+    & h2 {
+        font-size: 4rem;
+        margin: 5rem auto;
+        color: $color-tertiary;
+    }
+
+    & p {
+        font-size: 2rem;
+        margin-bottom: 10rem;
+        color: $color-tertiary;
+
+        @include respond(tab-port) {
+            font-size: 2.5rem;
+        }
+    }
+
+}
+
+/////// CONTACT SECTION ///////
+
+.contact {
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-secondary, 0.8),
+        rgba($color-contact, 0.8)),
+     url(../img/openinghours.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    color: $color-grey-light-1;
+    font-size: 1.6rem;
+
+    &__info {
+
+        & h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+
+            @include respond(tab-port) {
+                margin: 3rem 0;
+                font-size: $heading-contact;
+            }
+        }
+
+        & li {
+            list-style: none;
+            text-align: center;
+
+            @include respond(tab-port) {
+                font-size: $font-paragraph;
+            }
+        }
+    }
+
+    &__hours {
+
+        & h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+
+            @include respond(tab-port) {
+                margin: 3rem 0;
+                font-size: $heading-contact;
+            }
+        }
+
+        & li {
+            list-style: none;
+            color: $color-grey-light-1;
+            text-align: center;
+
+            @include respond(tab-port) {
+                font-size: $font-paragraph;
+            }
+        }
+    }
+
+    &__social {
+
+        text-align: center;
+        
+        & h2 {
+            margin-bottom: 3rem;
+
+            @include respond(tab-port) {
+                margin: 3rem 0;
+                font-size: $heading-contact;
+            }
+        }
+
+        & img {
+            height: 8rem;
+            margin-right: 2rem;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "koege-website",
+  "version": "1.0.0",
+  "description": "Main Page for Foreigners",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Filip",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

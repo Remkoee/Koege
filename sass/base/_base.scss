@@ -1,0 +1,67 @@
+///// COLORS VARIABLES //////
+
+$color-primary:#0011f8;
+$color-secondary: #3155ca;
+$color-tertiary: #2274e0;
+$color-contact: #201f5c;
+
+$color-grey-light-1: #f7f7f7;
+$color-navbar: #fff;
+$color-navbar-hover: #c8c8c8;
+$color-hover: #eeeeee;
+
+$color-grey:  #4b4b4b;
+$color-white: #fff;
+$color-white-trans: rgba(255, 255, 255, 0.8);
+$color-black: rgb(10, 10, 10);
+
+///// FONT SIZES VARIABLES //////
+
+$heading-contact: 3.3rem;
+$font-paragraph: 2rem;
+
+
+///// GRID //////
+$grid-width: 150rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+
+
+///// GLOBALS //////
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/////// BREAKPOINTS FOR FONT SIZES ///////
+
+html {
+    // 1REM = 10PX DEFAULT
+    font-size: 62.5%; //1 rem = 10px; 10px/16px=62.5%
+    
+    @include respond(tab-land) {    // less than 1200px
+        font-size: 56.25%; //1rem = 9px, 9/16= 56.25%
+    }
+
+    @include respond(tab-port) { // less than 900px
+        font-size: 50%; //1rem = 8px, 8/16= 50%
+    }
+
+    @include respond(phone) {    // less than 600px
+        font-size: 48%; //1rem = 9px, 9/16= 56.25%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 68.75%; //1rem = 11px, 11/16= 68.75%
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
